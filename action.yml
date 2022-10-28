@@ -5,6 +5,9 @@ intputs:
     description: 'Out some random message'
     required: true
     default: 'I am run to edge of the world to build this environment'
+  run:
+    description: 'Run command in container'
+    required: false
 output:
   ros-workspace-directory-name:
     description: |
