@@ -6,9 +6,20 @@ intputs:
     description: 'Out some random message'
     required: false
     default: 'I am run to edge of the world to build this environment'
+  image:
+    description: 'Image'
+    required: true
+    default: test-image:latest
+  options:
+    description: 'Options'
+    required: false
   run:
     description: 'Run command in container'
     required: false
+  shell:
+    description: 'Use a specific shell'
+    required: false
+    default: bash
 
 # outputs:
 #   ros-workspace-directory-name:
