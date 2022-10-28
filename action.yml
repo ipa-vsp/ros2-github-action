@@ -9,7 +9,7 @@ intputs:
   image:
     description: 'Image'
     required: true
-    default: test-image:latest
+    default: prachandabhanu/build_env:ros2-humble-kuka
   options:
     description: 'Options'
     required: false
