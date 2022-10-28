@@ -1,5 +1,6 @@
 name: 'ROS2 Build tool'
 description: 'Target description is Humble'
+
 intputs:
   display_message:
     description: 'Out some random message'
@@ -8,7 +9,8 @@ intputs:
   run:
     description: 'Run command in container'
     required: false
-output:
+
+outputs:
   ros-workspace-directory-name:
     description: |
       outputing somthing here
