@@ -29,3 +29,8 @@ intputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.image }}
+    - ${{ inputs.options }}
+    - ${{ inputs.run }}
+    - ${{ inputs.shell }}
