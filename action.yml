@@ -4,16 +4,16 @@ description: 'Target description is Humble'
 intputs:
   display_message:
     description: 'Out some random message'
-    required: true
+    required: false
     default: 'I am run to edge of the world to build this environment'
   run:
     description: 'Run command in container'
     required: false
 
-outputs:
-  ros-workspace-directory-name:
-    description: |
-      outputing somthing here
+# outputs:
+#   ros-workspace-directory-name:
+#     description: |
+#       outputing somthing here
 
 runs:
   using: 'docker'
