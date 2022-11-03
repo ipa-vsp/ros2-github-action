@@ -1,9 +1,9 @@
-FROM docker:latest
-# FROM prachandabhanu/build_env:ros2-humble-kuka
+# FROM docker:latest
+FROM prachandabhanu/build_env:ros2-humble-kuka
 
 # RUN /usr/local/bin/scripts/workspace-entrypoint.sh
 
-RUN apk add bash
+# RUN apk add bash
 
 COPY entrypoint.sh entrypoint.sh
 RUN chmod +x entrypoint.sh
