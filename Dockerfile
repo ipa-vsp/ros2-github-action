@@ -8,6 +8,6 @@ RUN apk add bash
 COPY entrypoint.sh entrypoint.sh
 RUN chmod +x entrypoint.sh
 
-RUN mkdir -p colcon_ws/src
+# RUN mkdir -p colcon_ws/src
 
 ENTRYPOINT [ "/entrypoint.sh" ]
