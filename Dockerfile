@@ -3,6 +3,9 @@ FROM docker:latest
 
 # RUN /usr/local/bin/scripts/workspace-entrypoint.sh
 
-COPY ./entrypoint.sh entrypoint.sh
+RUN apk add bash
 
-ENTRYPOINT [ "entrypoint.sh" ]
+COPY entrypoint.sh entrypoint.sh
+RUN chmod +x entrypoint.sh
+
+ENTRYPOINT [ "./entrypoint.sh" ]

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-echo $1
-# exec docker run -v "/var/run/docker.sock":"/var/run/docker.sock" $2 --entrypoint=$4 $1 -c "${3//$'\n'/;}"
+
+exec docker run -v "/var/run/docker.sock":"/var/run/docker.sock" prachandabhanu/build_env:ros2-humble-kuka -c "${1//$'\n'/;}"
