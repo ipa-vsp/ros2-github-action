@@ -10,7 +10,7 @@ intputs:
     description: 'Image'
     required: true
     default: prachandabhanu/build_env:ros2-humble-kuka
-  :
+  build_dir:
     description: 'Build directories'
     required: true
     default: colcon_ws
