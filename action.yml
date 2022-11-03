@@ -1,19 +1,10 @@
-name: 'ROS2 Build tool'
-description: 'Target description is Humble'
-
-intputs:
-  display_message:
-    description: 'Out some random message'
-    required: false
-    default: 'I am run to edge of the world to build this environment'
+# action.yml
+name: 'Docker Run Action'
+description: 'Run a command in a new container'
+inputs:
   image:
     description: 'Image'
     required: true
-    default: prachandabhanu/build_env:ros2-humble-kuka
-  build_dir:
-    description: 'Build directories'
-    required: true
-    default: colcon_ws
   options:
     description: 'Options'
     required: false
@@ -23,18 +14,20 @@ intputs:
   shell:
     description: 'Use a specific shell'
     required: false
-    default: bash
-
-# outputs:
-#   ros-workspace-directory-name:
-#     description: |
-#       outputing somthing here
-
+    default: sh
+  registry:
+    description: 'Registry'
+    required: false
+  username:
+    description: 'Username'
+    required: false
+  password:
+    description: 'Password'
+    required: false
+  docker_network:
+    description: 'Docker Network ID'
+    default: ${{ job.container.network }}
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-#     - ${{ inputs.image }}
-#     - ${{ inputs.options }}
-    - ${{ inputs.run }}
-    - ${{ inputs.build_dir }}
