@@ -10,6 +10,10 @@ intputs:
     description: 'Image'
     required: true
     default: prachandabhanu/build_env:ros2-humble-kuka
+  :
+    description: 'Build directories'
+    required: true
+    default: colcon_ws
   options:
     description: 'Options'
     required: false
@@ -33,4 +37,4 @@ runs:
 #     - ${{ inputs.image }}
 #     - ${{ inputs.options }}
     - ${{ inputs.run }}
-#     - ${{ inputs.shell }}
+    - ${{ inputs.build_dir }}
