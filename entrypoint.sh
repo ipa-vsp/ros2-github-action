@@ -5,5 +5,4 @@ echo "${1//$'\n'/;}"
 # echo "First ls"
 # exec ls
 echo "Execute commands"
-cd $1 && ls
-exec "${1//$'\n'/;}"
+exec ${1//$'\n'/;}
