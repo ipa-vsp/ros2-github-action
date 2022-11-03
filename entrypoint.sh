@@ -5,4 +5,5 @@ echo "${1//$'\n'/;}"
 # echo "First ls"
 # exec ls
 echo "Execute commands"
-exec "${INPUT_RUN//$'\n'/;}"
+exec cd colcon_ws/src && ll
+# exec "${INPUT_RUN//$'\n'/;}"
