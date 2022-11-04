@@ -14,7 +14,7 @@ inputs:
   shell:
     description: 'Use a specific shell'
     required: false
-    default: sh
+    default: bash
   registry:
     description: 'Registry'
     required: false
